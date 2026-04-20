@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  @apply bg-[#F8FAFC] text-slate-800 font-sans antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+.active-scenario {
+  @apply border-blue-600 bg-[#EFF6FF];
+}
+
+.markdown-body {
+  @apply text-slate-700 leading-relaxed text-[15px];
+}
+.markdown-body h1 {
+  @apply text-2xl font-bold mt-8 mb-4 text-slate-900 border-b border-slate-200 pb-2;
+}
+.markdown-body h2 {
+  @apply text-xl font-bold mt-6 mb-3 text-slate-900;
+}
+.markdown-body h3 {
+  @apply text-lg font-bold mt-5 mb-2 text-slate-900;
+}
+.markdown-body p {
+  @apply mt-2 mb-4;
+}
+.markdown-body ul {
+  @apply list-disc list-outside mt-2 mb-4 ml-5 space-y-1;
+}
+.markdown-body ol {
+  @apply list-decimal list-outside mt-2 mb-4 ml-5 space-y-1;
+}
+.markdown-body li {
+  @apply leading-relaxed;
+}
+.markdown-body strong {
+  @apply font-semibold text-slate-900;
+}
